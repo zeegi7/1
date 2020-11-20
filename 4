@@ -1,0 +1,27 @@
+x=-1
+y=1
+def setup():
+    size(400,400)
+    stroke(CENTER)
+def draw():
+    background("#000000")
+    noStroke()
+    fill(random(0,255),random(0,255),random(0,255))
+    ellipse(random(0,400),random(0,400),random(0,10),random(0,10))
+    translate(200,200)
+    fill("#2EF046")
+    ellipse(0,0,50,50)
+    global y
+    y+=2
+    rotate(radians(y))
+    fill("#E0F500")
+    ellipse(0,100,60,60)
+    rotate(radians(0))
+    translate(-25,45)
+    triangle(20,20,25,15,30,20)
+    translate(8,105)
+    rotate(10)
+    triangle(20,20,25,15,30,20)
+    translate(-40,80)
+    rotate(80)
+    triangle(20,20,25,15,30,20)
