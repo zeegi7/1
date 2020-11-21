@@ -1,0 +1,16 @@
+x=0
+y=2
+def setup():
+   size(400,400)
+   noStroke()
+def draw():
+    background("#FFFCFC")
+    global x,y
+    x +=y
+    fill(x)
+    circle(200,200,x)
+    text(x,0,40)
+    if x >= 255:
+        y = -2
+    elif x <= 0:
+        y = 2
